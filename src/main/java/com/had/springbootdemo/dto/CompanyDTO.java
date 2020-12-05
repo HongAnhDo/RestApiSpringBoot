@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -16,4 +17,5 @@ public class CompanyDTO implements Serializable {
     private String name;
     private String address;
     private String code;
+    private List<OfficeDTO> offices;
 }
